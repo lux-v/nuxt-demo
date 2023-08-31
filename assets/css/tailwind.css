@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-gray-100;
+}
+
+@layer components {
+    .btn {
+        @apply bg-[#12b488] text-white px-3 py-2 rounded-md text-sm text-white font-medium hover:bg-[#0d9e7a];
+    }
+
+    .btn--secondary {
+        @apply bg-[white] text-[#12b488] px-3 py-2 rounded-md text-sm text-[#12b488] font-medium border-[#12b488] border-2 hover:bg-[#12b488] hover:text-white;
+    }
+
+    .card {
+        @apply p-3 rounded-md bg-white shadow-md h-full flex flex-col justify-between;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+}
